@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "16667762849",
+    "firebase_url": "https://appenviarsms.firebaseio.com",
+    "project_id": "appenviarsms",
+    "storage_bucket": "appenviarsms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16667762849:android:6f69f51bc52ef561e310e0",
+        "android_client_info": {
+          "package_name": "com.example.enviarsmsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16667762849-u1rmffsqphdq2m3ltsoge6fq92cbru5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq2X-zCEjxE1X6HxGiMWiEP75-YSPzT90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16667762849-u1rmffsqphdq2m3ltsoge6fq92cbru5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
