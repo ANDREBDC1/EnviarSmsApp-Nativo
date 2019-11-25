@@ -2,9 +2,9 @@ package com.example.enviarsmsapp;
 
 public class User {
 
-    public User(String id, String tokem, String numberPhone) {
+    public User(String id, String token, String numberPhone) {
         this.id = id;
-        this.tokem = tokem;
+        this.token = token;
         this.numberPhone = numberPhone;
     }
 
@@ -16,12 +16,12 @@ public class User {
         this.id = id;
     }
 
-    public String getTokem() {
-        return tokem;
+    public String getToken() {
+        return token;
     }
 
-    public void setTokem(String tokem) {
-        this.tokem = tokem;
+    public void setToken(String tokem) {
+        this.token = tokem;
     }
 
     public String getNumberPhone() {
@@ -33,7 +33,7 @@ public class User {
     }
 
     private String id;
-    private String tokem;
+    private String token;
     private String numberPhone;
 
 }
