@@ -39,29 +39,33 @@
 
     <EditText
         android:id="@+id/txt_ddd"
-        android:layout_width="81dp"
-        android:layout_height="40dp"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:hint="(99)"
+        android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="(99)"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txt_number_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:hint="9999-9999"
         android:ems="10"
+        android:hint="9999-9999"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="@+id/txt_ddd"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toEndOf="@+id/txt_ddd"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
