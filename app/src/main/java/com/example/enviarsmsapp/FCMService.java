@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.ArrayList;
+
 public class FCMService extends FirebaseMessagingService {
 
     @Override
@@ -26,10 +28,19 @@ public class FCMService extends FirebaseMessagingService {
 
         PendingIntent sentPI = PendingIntent.getBroadcast(getBaseContext(), 0, intent1
                 , 0);
+
         PendingIntent deliveredPI = PendingIntent.getBroadcast(getBaseContext(), 0,
                 intent2, 0);
 
+        ArrayList<PendingIntent> sents = new ArrayList<>();
+        ArrayList<PendingIntent> delivereds = new ArrayList<>();
+
+        sents.add(sentPI);
+        delivereds.add(deliveredPI);
+
+
+
         SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(destinationNumber, null, message, sentPI, deliveredPI);
+        smsManager.sendMultipartTextMessage(destinationNumber, null, smsManager.divideMessage(message), sents, delivereds);
     }
 }
